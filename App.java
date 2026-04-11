@@ -11,7 +11,7 @@ public class App {
 
         System.out.println("=== Welcome to the Registration System ===\n");
 
-        // ── Collect registration details ─────────────────────────────────────
+        // ──  Collect registration details ─────────────────────────────────────
         System.out.print("Enter your first name    : ");
         String firstName = scanner.nextLine();
 
