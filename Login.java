@@ -58,9 +58,6 @@ public class Login {
      * international country code (+27) followed by exactly 9 digits,
      * making the total number no more than 12 characters (e.g. +27831234567).
      *
-     * Regex reference:
-     * Friedl, J.E.F. (2006). Mastering Regular Expressions. O'Reilly Media.
-     * URL: https://www.regular-expressions.info/phone.html
      *
      * @return true if valid, false otherwise
      */
