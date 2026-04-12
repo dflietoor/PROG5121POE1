@@ -77,14 +77,7 @@ public class Login {
         boolean validUsername = checkUserName();
         boolean validPassword = checkPasswordComplexity();
         boolean validCell     = checkCellPhoneNumber();
-
-        if (!validUsername && !validPassword) {
-            return "Username is not correctly formatted; please ensure that your username "
-                 + "contains an underscore and is no more than five characters in length.\n"
-                 + "Password is not correctly formatted; please ensure that the password "
-                 + "contains at least eight characters, a capital letter, a number, and a "
-                 + "special character.";
-        }
+    }
 
         if (!validUsername) {
             return "Username is not correctly formatted; please ensure that your username "
