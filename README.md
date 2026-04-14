@@ -30,3 +30,5 @@ If the cell phone number requirements are not met a failure message displays("ca
 ----------------------------------------------------------------------------------------------------------------------------
 
 logging in
+A successful loging is indicated by a message that says "Welcome <name>,<surname> it is great to see you again."
+A unsuccessful loging is indicated by a message that says "username or password is incorrect, please try again."
