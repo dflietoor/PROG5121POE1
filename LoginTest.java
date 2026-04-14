@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit tests for the Login class.
+ * JUnit tests for the Login class.
  * Test data as specified in the PROG5121 assignment brief.
  */
 public class LoginTest {
@@ -17,7 +17,7 @@ public class LoginTest {
     }
 
     // -----------------------------------------------------------------------
-    // assertEquals tests — checkUserName
+    // checkUserName
     // -----------------------------------------------------------------------
 
     @Test
@@ -32,14 +32,13 @@ public class LoginTest {
         // Test Data: "kyle!!!!!!!" — no underscore, too long
         Login invalidUser = new Login("John", "Doe", "kyle!!!!!!!", "Ch&&sec@ke99!", "+27831234567");
         assertEquals(
-            "Username is not correctly formatted; please ensure that your username "
-          + "contains an underscore and is no more than five characters in length.",
+            "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.",
             getRegisterUsernameOnly(invalidUser)
         );
     }
 
     // -----------------------------------------------------------------------
-    // assertEquals tests — checkPasswordComplexity
+    // checkPasswordComplexity
     // -----------------------------------------------------------------------
 
     @Test
@@ -59,7 +58,7 @@ public class LoginTest {
     }
 
     // -----------------------------------------------------------------------
-    // assertEquals tests — checkCellPhoneNumber
+    // checkCellPhoneNumber
     // -----------------------------------------------------------------------
 
     @Test
@@ -77,23 +76,23 @@ public class LoginTest {
     }
 
     // -----------------------------------------------------------------------
-    // assertTrue / assertFalse tests — loginUser
+    //  testloginUser (True/False)
     // -----------------------------------------------------------------------
 
     @Test
     public void testLoginSuccessful() {
-        // Correct credentials — should return true
+        // Correct credentials should return true
         assertTrue("Login should be successful", login.loginUser("kyl_1", "Ch&&sec@ke99!"));
     }
 
     @Test
     public void testLoginFailed() {
-        // Wrong credentials — should return false
+        // Wrong credentials should return false
         assertFalse("Login should fail", login.loginUser("kyl_1", "wrongpassword"));
     }
 
     // -----------------------------------------------------------------------
-    // assertTrue / assertFalse — boolean checker methods
+    // Boolean check (True/False) for username,password and cellphone number
     // -----------------------------------------------------------------------
 
     @Test
@@ -136,7 +135,7 @@ public class LoginTest {
     }
 
     // -----------------------------------------------------------------------
-    // assertEquals tests — returnLoginStatus
+    // check Return Login Status
     // -----------------------------------------------------------------------
 
     @Test
